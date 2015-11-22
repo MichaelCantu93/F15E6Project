@@ -1,0 +1,493 @@
+drop view F15E6Emp_view;
+drop view F15E6Chairperson_view;
+drop view F15E6Exec_Dir_view;
+drop view F15E6Lab_Dir_view;
+drop view F15E6LabSA_view;
+drop view F15E6RFE_view ;
+drop view F15E6COMMENT_view ;
+
+create view F15E6Emp_view as 
+SELECT
+    emp_id,
+    emp_name,
+    emp_email,
+    emp_office,
+    emp_phone,
+    emp_status,
+    stat_eff_date,
+    admin_flag,
+    labdir_flag,
+    execdir_flag,
+    chair_flag,
+    F15E6_Lab_lab_id,
+    F15E6_Auth_auth_id
+FROM F15E6_Emp;
+
+create or replace TRIGGER F15E6Emp_trigger
+    INSTEAD OF insert ON F15E6Emp_view
+    FOR EACH ROW
+BEGIN
+    insert into F15E6_Emp(
+        emp_id,
+        emp_name,
+        emp_email,
+        emp_office,
+        emp_phone,
+        emp_status,
+        stat_eff_date,
+        admin_flag,
+        labdir_flag,
+        execdir_flag,
+        chair_flag,
+        F15E6_Lab_lab_id,
+        F15E6_Auth_auth_id)
+         VALUES (
+        :NEW.emp_id,
+        :NEW.emp_name,
+        :NEW.emp_email,
+        :NEW.emp_office,
+        :NEW.emp_phone,
+        :NEW.emp_status,
+        :NEW.stat_eff_date,
+        'N',
+        'N',
+        'N',
+        'N',
+        :NEW.F15E6_Lab_lab_id,
+        :NEW.F15E6_Auth_auth_id) ;
+END;
+/
+
+create view F15E6Chairperson_view as 
+SELECT
+    emp_id,
+    emp_name,
+    emp_email,
+    emp_office,
+    emp_phone,
+    emp_status,
+    stat_eff_date,
+    admin_flag,
+    labdir_flag,
+    execdir_flag,
+    chair_flag,
+    F15E6_Lab_lab_id,
+    F15E6_Auth_auth_id
+FROM F15E6_Emp;
+
+create or replace TRIGGER F15E6Chairperson_trigger
+    INSTEAD OF insert ON F15E6Chairperson_view
+    FOR EACH ROW
+BEGIN
+    insert into F15E6_Emp(
+        emp_id,
+        emp_name,
+        emp_email,
+        emp_office,
+        emp_phone,
+        emp_status,
+        stat_eff_date,
+        admin_flag,
+        labdir_flag,
+        execdir_flag,
+        chair_flag,
+        F15E6_Lab_lab_id,
+        F15E6_Auth_auth_id)
+         VALUES (
+        :NEW.emp_id,
+        :NEW.emp_name,
+        :NEW.emp_email,
+        :NEW.emp_office,
+        :NEW.emp_phone,
+        :NEW.emp_status,
+        :NEW.stat_eff_date,
+        'N',
+        'N',
+        'N',
+        'Y',
+        :NEW.F15E6_Lab_lab_id,
+        :NEW.F15E6_Auth_auth_id) ;
+END;
+/
+
+create view F15E6Exec_Dir_view as 
+SELECT
+    emp_id,
+    emp_name,
+    emp_email,
+    emp_office,
+    emp_phone,
+    emp_status,
+    stat_eff_date,
+    admin_flag,
+    labdir_flag,
+    execdir_flag,
+    chair_flag,
+    F15E6_Lab_lab_id,
+    F15E6_Auth_auth_id
+FROM F15E6_Emp;
+
+create or replace TRIGGER F15E6Exec_Dir_trigger
+    INSTEAD OF insert ON F15E6Exec_Dir_view
+    FOR EACH ROW
+BEGIN
+    insert into F15E6_Emp(
+        emp_id,
+        emp_name,
+        emp_email,
+        emp_office,
+        emp_phone,
+        emp_status,
+        stat_eff_date,
+        admin_flag,
+        labdir_flag,
+        execdir_flag,
+        chair_flag,
+        F15E6_Lab_lab_id,
+        F15E6_Auth_auth_id)
+         VALUES (
+        :NEW.emp_id,
+        :NEW.emp_name,
+        :NEW.emp_email,
+        :NEW.emp_office,
+        :NEW.emp_phone,
+        :NEW.emp_status,
+        :NEW.stat_eff_date,
+        'N',
+        'N',
+        'Y',
+        'N',
+        :NEW.F15E6_Lab_lab_id,
+        :NEW.F15E6_Auth_auth_id) ;
+END;
+/
+
+
+create view F15E6Lab_Dir_view as 
+SELECT
+    emp_id,
+    emp_name,
+    emp_email,
+    emp_office,
+    emp_phone,
+    emp_status,
+    stat_eff_date,
+    admin_flag,
+    labdir_flag,
+    execdir_flag,
+    chair_flag,
+    F15E6_Lab_lab_id,
+    F15E6_Auth_auth_id
+FROM F15E6_Emp;
+
+create or replace TRIGGER F15E6Lab_Dir_trigger
+    INSTEAD OF insert ON F15E6Lab_Dir_view
+    FOR EACH ROW
+BEGIN
+    insert into F15E6_Emp(
+        emp_id,
+        emp_name,
+        emp_email,
+        emp_office,
+        emp_phone,
+        emp_status,
+        stat_eff_date,
+        admin_flag,
+        labdir_flag,
+        execdir_flag,
+        chair_flag,
+        F15E6_Lab_lab_id,
+        F15E6_Auth_auth_id)
+         VALUES (
+        :NEW.emp_id,
+        :NEW.emp_name,
+        :NEW.emp_email,
+        :NEW.emp_office,
+        :NEW.emp_phone,
+        :NEW.emp_status,
+        :NEW.stat_eff_date,
+        'N',
+        'Y',
+        'N',
+        'N',
+        :NEW.F15E6_Lab_lab_id,
+        :NEW.F15E6_Auth_auth_id) ;
+END;
+/
+
+create view F15E6LabSA_view as 
+SELECT
+    emp_id,
+    emp_name,
+    emp_email,
+    emp_office,
+    emp_phone,
+    emp_status,
+    stat_eff_date,
+    admin_flag,
+    labdir_flag,
+    execdir_flag,
+    chair_flag,
+    F15E6_Lab_lab_id,
+    F15E6_Auth_auth_id
+FROM F15E6_Emp;
+
+create or replace TRIGGER F15E6LabSA_trigger
+    INSTEAD OF insert ON F15E6LabSA_view
+    FOR EACH ROW
+BEGIN
+    insert into F15E6_Emp(
+        emp_id,
+        emp_name,
+        emp_email,
+        emp_office,
+        emp_phone,
+        emp_status,
+        stat_eff_date,
+        admin_flag,
+        labdir_flag,
+        execdir_flag,
+        chair_flag,
+        F15E6_Lab_lab_id,
+        F15E6_Auth_auth_id)
+         VALUES (
+        :NEW.emp_id,
+        :NEW.emp_name,
+        :NEW.emp_email,
+        :NEW.emp_office,
+        :NEW.emp_phone,
+        :NEW.emp_status,
+        :NEW.stat_eff_date,
+        'Y',
+        'N',
+        'N',
+        'N',
+        :NEW.F15E6_Lab_lab_id,
+        :NEW.F15E6_Auth_auth_id) ;
+END;
+/
+
+
+
+create view F15E6RFE_view as
+SELECT *
+FROM F15E6_RFE;
+
+
+
+create or replace TRIGGER F15E6RFE_view_trigger
+   INSTEAD OF INSERT ON F15E6RFE_view
+   DECLARE
+     rfe_id NUMBER;
+     comment_id NUMBER;
+     l_selected APEX_APPLICATION_GLOBAL.VC_ARR2;
+     tasks APEX_APPLICATION_GLOBAL.VC_ARR2;
+     temp VARCHAR2(4000);
+     final VARCHAR2(4000);
+     admin NUMBER;
+     labdir NUMBER;
+     chair NUMBER;
+     execdir NUMBER;
+     newdate DATE;
+     temp2 VARCHAR2(400);
+     final2 VARCHAR2(400);
+     hist_id NUMBER;
+   BEGIN
+    -- rfe_id := F15E6_RFE_seq.nextval;
+     comment_id := F15E6_Comment_seq.nextval;
+     hist_id := F15E6_Hist_seq.nextval;
+     temp := NULL;
+     temp2 := NULL;
+     final2 := NULL;
+     final := NULL;
+     SELECT TO_DATE (TO_CHAR (SYSTIMESTAMP, 'YYYY-MON-DD HH24:MI:SS'),
+                'YYYY-MON-DD HH24:MI:SS'
+               ) into newdate
+      FROM DUAL;
+     INSERT INTO F15E6_RFE(RFE_ID, EXPLANATION, ALT_PROTEX, APRVL_REV_DATE, F15E6_Emp_emp_id, F15E6_Status_status_id, F15E6_Task_task_id) VALUES (
+        F15E6_RFE_seq.nextval,
+        :NEW.EXPLANATION,
+        :NEW.ALT_PROTEX,
+        :NEW.APRVL_REV_DATE,
+        v('P2_EMP'),
+        101,
+        :NEW.F15E6_Task_task_id
+     );
+     IF(v('P5_COMMENTS') IS NOT NULL) THEN 
+     INSERT INTO F15E6_COMMENT(COMMENT_ID, ENTRY_DATE, COMMENTS, F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID) VALUES (
+        comment_id,
+        newdate,
+        v('P5_COMMENTS'),
+        v('P2_EMP'),
+        F15E6_RFE_seq.currval
+     );
+     END IF;
+     
+     INSERT INTO F15E6_HIST(HIST_ID, STATUS_ID, EFF_DATE, EMP_ID, F15E6_RFE_RFE_ID) VALUES (
+         hist_id,
+         101,
+         newdate,
+         v('P2_EMP'),
+         F15E6_RFE_seq.currval
+     );
+     
+     select emp_id into execdir from F15E6_EMP where execdir_flag = 'Y';
+     select emp_id into chair from F15E6_EMP where chair_flag = 'Y';
+     select emp_id into labdir from F15E6_EMP where labdir_flag = 'Y' and v('P2_LAB') = F15E6_LAB_LAB_ID;
+     select emp_id into admin from F15E6_EMP where admin_flag = 'Y' and v('P2_LAB') = F15E6_LAB_LAB_ID;     
+     
+     
+     INSERT INTO F15E6_APPROVER(F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID, APPROVER_ID) VALUES (
+        admin,
+        F15E6_RFE_seq.currval,
+        F15E6_Approver_seq.nextval
+     );
+     INSERT INTO F15E6_APPROVER(F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID, APPROVER_ID) VALUES (
+        labdir,
+        F15E6_RFE_seq.currval,
+        F15E6_Approver_seq.nextval
+     );
+     INSERT INTO F15E6_APPROVER(F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID, APPROVER_ID) VALUES (
+        chair,
+        F15E6_RFE_seq.currval,
+        F15E6_Approver_seq.nextval
+     );
+     INSERT INTO F15E6_APPROVER(F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID, APPROVER_ID) VALUES (
+        execdir,
+        F15E6_RFE_seq.currval,
+        F15E6_Approver_seq.nextval
+     );
+     
+     l_selected := APEX_UTIL.STRING_TO_TABLE(v('P5_CONTACT'));
+     tasks := APEX_UTIL.STRING_TO_TABLE(v('P5_TASK_ID'));
+     
+     IF(v('P5_CONTACT') IS NOT NULL) THEN
+       FOR i IN 1..l_selected.count 
+      LOOP
+          select emp_name into temp from F15E6_EMP where emp_id = TO_NUMBER(l_selected(i));
+          IF i = 1 THEN
+           final := temp; 
+          
+          ELSE 
+          final := final || ', ' || temp;
+          END IF;
+      END LOOP;
+      FOR j IN 1..l_selected.count 
+      LOOP
+          INSERT INTO F15E6_CONTACT(F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID, CONTACT_ID, CONTACT_LIST) VALUES (
+            TO_NUMBER(l_selected(j)),
+            F15E6_RFE_seq.currval,
+            F15E6_Contact_seq.nextval,
+            final
+         );
+      END LOOP;
+     END IF;
+     
+          
+     IF(v('P5_TASK_ID') IS NOT NULL) THEN
+       FOR k IN 1..tasks.count 
+      LOOP
+          select task_abbrev into temp2 from F15E6_TASK where task_id = TO_NUMBER(tasks(k));
+          IF k = 1 THEN
+           final2 := temp2; 
+          
+          ELSE 
+          final2 := final2 || ', ' || temp2;
+          END IF;
+      END LOOP;
+      FOR p IN 1..tasks.count 
+      LOOP
+          INSERT INTO F15E6_RFETASK(F15E6_RFE_RFE_ID, F15E6_TASK_TASK_ID, RFETASK_ID, TASK_LIST) VALUES (
+            F15E6_RFE_seq.currval,
+            TO_NUMBER(tasks(p)),
+            F15E6_RFETASK_seq.nextval,
+            final2
+         );
+      END LOOP;
+     END IF;
+     
+   END F15E6RFE_view_trigger;
+/
+
+create or replace TRIGGER F15E6RFE_update_trigger
+   AFTER UPDATE ON F15E6_RFE
+   FOR EACH ROW
+   DECLARE
+   comment_id NUMBER;
+   rfeid NUMBER;
+   status NUMBER;
+   name VARCHAR2(30);
+   hist_id NUMBER;
+   oldstatus NUMBER;
+   BEGIN
+       comment_id := F15E6_Comment_seq.nextval;
+       rfeid := :new.RFE_ID;
+       status := :new.F15E6_STATUS_STATUS_ID;
+       oldstatus := :old.F15E6_STATUS_STATUS_ID;
+       SELECT emp_name into name from F15E6_EMP where v('P2_EMP') = emp_id;
+       IF status = 104 THEN
+         INSERT INTO F15E6_COMMENT(COMMENT_ID, ENTRY_DATE, COMMENTS, F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID) VALUES (
+            comment_id,
+            SYSDATE,
+            'RFE was recalled by '||name || ' on ' || TO_CHAR(SYSDATE, 'MONTH DD, YYYY, HH24:MI:SS'),
+            v('P2_EMP'),
+            rfeid
+         );  
+       END IF;
+       IF status = 103 THEN
+         INSERT INTO F15E6_COMMENT(COMMENT_ID, ENTRY_DATE, COMMENTS, F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID) VALUES (
+            comment_id,
+            SYSDATE,
+            'RFE was returned by '||name || ' on ' || TO_CHAR(SYSDATE, 'MONTH DD, YYYY, HH24:MI:SS'),
+            v('P2_EMP'),
+            rfeid
+         );  
+        END IF;
+        IF status = 105 THEN
+         INSERT INTO F15E6_COMMENT(COMMENT_ID, ENTRY_DATE, COMMENTS, F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID) VALUES (
+            comment_id,
+            SYSDATE,
+            'RFE was rejected by '||name || ' on ' || TO_CHAR(SYSDATE, 'MONTH DD, YYYY, HH24:MI:SS'),
+            v('P2_EMP'),
+            rfeid
+         );  
+       END IF;
+         
+       IF oldstatus != status THEN
+         hist_id := F15E6_Hist_seq.nextval;
+         INSERT INTO F15E6_HIST(HIST_ID, STATUS_ID, EFF_DATE, EMP_ID, F15E6_RFE_RFE_ID) VALUES (
+             hist_id,
+             status,
+             SYSDATE,
+             v('P2_EMP'),
+             rfeid
+         );
+       END IF;
+   END F15E6RFE_update_trigger;
+/
+
+create view F15E6COMMENT_view as
+SELECT *
+FROM F15E6_COMMENT;
+
+
+create or replace TRIGGER F15E6COMMENT_view_trigger
+   INSTEAD OF INSERT ON F15E6COMMENT_view
+   DECLARE
+     comment_id NUMBER;
+     newdate DATE;
+   BEGIN
+        SELECT TO_DATE (TO_CHAR (SYSTIMESTAMP, 'YYYY-MON-DD HH24:MI:SS'),
+                'YYYY-MON-DD HH24:MI:SS'
+               ) into newdate
+      FROM DUAL;
+     comment_id := F15E6_Comment_seq.nextval;
+     INSERT INTO F15E6_COMMENT(COMMENT_ID, ENTRY_DATE, COMMENTS, F15E6_EMP_EMP_ID, F15E6_RFE_RFE_ID) VALUES (
+        comment_id,
+        newdate,
+        :NEW.COMMENTS,
+        v('P2_EMP'),
+        :NEW.F15E6_RFE_RFE_ID
+     );
+   END F15E6COMMENT_view_trigger;
+/

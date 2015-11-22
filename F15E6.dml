@@ -1,0 +1,225 @@
+ALTER TABLE F15E6_Approver disable CONSTRAINT F15E6_Approver_PK;
+
+ALTER TABLE F15E6_Comment disable CONSTRAINT F15E6_Comment_PK;
+
+ALTER TABLE F15E6_Contact disable CONSTRAINT F15E6_Contact_PK;
+
+ALTER TABLE F15E6_Doc disable CONSTRAINT F15E6_Doc_PK;
+
+ALTER TABLE F15E6_Hist disable CONSTRAINT F15E6_Hist_PK;
+
+ALTER TABLE F15E6_rfetask disable CONSTRAINT F15E6_rfetask_PK;
+
+ALTER TABLE F15E6_Approver disable CONSTRAINT F15E6_Approver_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_Approver disable CONSTRAINT F15E6_Approver_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Comment disable CONSTRAINT F15E6_Comment_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_Comment disable CONSTRAINT F15E6_Comment_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Contact disable CONSTRAINT F15E6_Contact_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_Contact disable CONSTRAINT F15E6_Contact_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Doc disable CONSTRAINT F15E6_Doc_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Emp disable CONSTRAINT F15E6_Emp_F15E6_Auth_FK;
+
+ALTER TABLE F15E6_Emp disable CONSTRAINT F15E6_Emp_F15E6_Lab_FK;
+
+ALTER TABLE F15E6_Hist disable CONSTRAINT F15E6_Hist_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_RFE disable CONSTRAINT F15E6_RFE_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_RFE disable CONSTRAINT F15E6_RFE_F15E6_Status_FK;
+
+ALTER TABLE F15E6_RFE disable CONSTRAINT F15E6_RFE_F15E6_Task_FK;
+
+ALTER TABLE F15E6_rfetask disable CONSTRAINT F15E6_rfetask_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_rfetask disable CONSTRAINT F15E6_rfetask_F15E6_Task_FK;
+
+truncate table F15E6_APPROVER;
+truncate table F15E6_COMMENT;
+truncate table F15E6_CONTACT;
+truncate table F15E6_DOC;
+truncate table F15E6_HIST;
+truncate table F15E6_RFETASK;
+truncate table F15E6_RFE;
+truncate table F15E6_TASK;
+truncate table F15E6_EMP;
+truncate table F15E6_AUTH;
+truncate table F15E6_LAB;
+truncate table F15E6_STATUS;
+
+ALTER TABLE F15E6_Approver enable CONSTRAINT F15E6_Approver_PK;
+
+ALTER TABLE F15E6_Comment enable CONSTRAINT F15E6_Comment_PK;
+
+ALTER TABLE F15E6_Contact enable CONSTRAINT F15E6_Contact_PK;
+
+ALTER TABLE F15E6_Doc enable CONSTRAINT F15E6_Doc_PK;
+
+ALTER TABLE F15E6_Hist enable CONSTRAINT F15E6_Hist_PK;
+
+ALTER TABLE F15E6_rfetask enable CONSTRAINT F15E6_rfetask_PK;
+
+ALTER TABLE F15E6_Approver enable CONSTRAINT F15E6_Approver_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_Approver enable CONSTRAINT F15E6_Approver_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Comment enable CONSTRAINT F15E6_Comment_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_Comment enable CONSTRAINT F15E6_Comment_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Contact enable CONSTRAINT F15E6_Contact_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_Contact enable CONSTRAINT F15E6_Contact_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Doc enable CONSTRAINT F15E6_Doc_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_Emp enable CONSTRAINT F15E6_Emp_F15E6_Auth_FK;
+
+ALTER TABLE F15E6_Emp enable CONSTRAINT F15E6_Emp_F15E6_Lab_FK;
+
+ALTER TABLE F15E6_Hist enable CONSTRAINT F15E6_Hist_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_RFE enable CONSTRAINT F15E6_RFE_F15E6_Emp_FK;
+
+ALTER TABLE F15E6_RFE enable CONSTRAINT F15E6_RFE_F15E6_Status_FK;
+
+ALTER TABLE F15E6_RFE enable CONSTRAINT F15E6_RFE_F15E6_Task_FK;
+
+ALTER TABLE F15E6_rfetask enable CONSTRAINT F15E6_rfetask_F15E6_RFE_FK;
+
+ALTER TABLE F15E6_rfetask enable CONSTRAINT F15E6_rfetask_F15E6_Task_FK;
+
+alter trigger F15E6_Emp_PK_trig disable;
+alter trigger F15E6_Lab_PK_trig disable;
+alter trigger F15E6_Auth_PK_trig disable;
+alter trigger F15E6_Status_PK_trig disable;
+alter trigger F15E6_Task_PK_trig disable;
+
+INSERT INTO F15E6_Lab(LAB_ID, LAB_NAME, LAB_DESC) VALUES (1, 'Research', 'This lab conducts research on future products.');
+INSERT INTO F15E6_Lab(LAB_ID, LAB_NAME, LAB_DESC) VALUES (2, 'Testing', 'This lab conducts testing on future products.');
+INSERT INTO F15E6_Lab(LAB_ID, LAB_NAME, LAB_DESC) VALUES (3, 'Administration', 'This lab maintains the administration of the company.');
+INSERT INTO F15E6_Lab(LAB_ID, LAB_NAME, LAB_DESC) VALUES (4, 'Commercial', 'This lab devises business plans on future products.');
+INSERT INTO F15E6_Lab(LAB_ID, LAB_NAME, LAB_DESC) VALUES (5, 'Demo', 'This lab demonstrates future products.');
+INSERT INTO F15E6_Lab(LAB_ID, LAB_NAME, LAB_DESC) VALUES (6, 'Technology', 'This lab creates technology for use in future products.');
+
+INSERT INTO F15E6_Auth(AUTH_ID, RIGHT) VALUES (100, 'Edit');
+INSERT INTO F15E6_Auth(AUTH_ID, RIGHT) VALUES (101, 'View');
+INSERT INTO F15E6_Auth(AUTH_ID, RIGHT) VALUES (102, 'None');
+
+INSERT INTO F15E6EXEC_DIR_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (1, 'Denn Glowning', 'dennglowning@cs.utexas.edu', 'Head Office', '866-9513', 'A', TO_DATE('15-JUN-1982', 'DD-MON-YYYY'), 3, 100);
+  
+INSERT INTO F15E6CHAIRPERSON_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (2, 'Yill Boung', 'yillboung@cs.utexas.edu', 'Chair Office', '866-9514', 'A', TO_DATE('22-AUG-1991', 'DD-MON-YYYY'), 3, 100);
+
+INSERT INTO F15E6LAB_DIR_VIEW(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (3, 'Nordon Govak', 'nordongovak@cs.utexas.edu', 'LD Office', '866-9515', 'A', TO_DATE('10-JAN-1993', 'DD-MON-YYYY'), 1, 100);
+INSERT INTO F15E6LAB_DIR_VIEW(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (4, 'Joe Nogro', 'joe@no.gro', 'LD Office', '866-9516', 'A', TO_DATE('26-MAR-2000', 'DD-MON-YYYY'), 2, 100);
+INSERT INTO F15E6LAB_DIR_VIEW(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (5, 'Simon Says', 'dowhatisay@simon.says', 'LD Office', '866-9517', 'A', TO_DATE('17-NOV-2004', 'DD-MON-YYYY'), 3, 100);
+INSERT INTO F15E6LAB_DIR_VIEW(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (6, 'Becky Buckerson', 'becky@bucker.son', 'LD Office', '866-9518', 'A', TO_DATE('5-FEB-1999', 'DD-MON-YYYY'), 4, 100);
+INSERT INTO F15E6LAB_DIR_VIEW(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (7, 'Amabo Krab', 'krustyamabo@eugene.krabs', 'LD Office', '866-9519', 'A', TO_DATE('21-JUL-1985', 'DD-MON-YYYY'), 5, 100);
+INSERT INTO F15E6LAB_DIR_VIEW(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (8, 'Nora Coal', 'n@ora.coal', 'LD Office', '866-9520', 'A', TO_DATE('14-APR-1973', 'DD-MON-YYYY'), 6, 100);
+  
+INSERT INTO F15E6LABSA_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (9, 'Neo Forjay', 'neo@for.jay', 'Admin Office', '866-9521', 'A', TO_DATE('27-MAY-2009', 'DD-MON-YYYY'), 1, 100);
+INSERT INTO F15E6LABSA_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (10, 'Esque Ella ', 'esque@ella.kwary', 'Admin Office', '866-9522', 'A', TO_DATE('12-SEP-1989', 'DD-MON-YYYY'), 2, 100);
+INSERT INTO F15E6LABSA_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (11, 'Jay Son', 'jay@son.jason', 'Admin Office', '866-9523', 'A', TO_DATE('1-OCT-2002', 'DD-MON-YYYY'), 3, 100);
+INSERT INTO F15E6LABSA_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (12, 'Jimmy John', 'jimmy@john.jj', 'Admin Office', '866-9524', 'A', TO_DATE('20-DEC-2004', 'DD-MON-YYYY'), 4, 100);
+INSERT INTO F15E6LABSA_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (13, 'Chan Jackie', 'jacke@chan.adv', 'Admin Office', '866-9525', 'A', TO_DATE('13-APR-2001', 'DD-MON-YYYY'), 5, 100);
+INSERT INTO F15E6LABSA_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID) 
+  VALUES (14, 'Lily Pad', 'lily@pad.frog', 'Admin Office', '866-9526', 'A', TO_DATE('24-FEB-2010', 'DD-MON-YYYY'), 6, 100);
+  
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (15, 'Chris Redfield', 'chrisredfield@umbrellacorp.org', 'Office 1', '866-9512', 'A', TO_DATE('4-OCT-2005', 'DD-MON-YYYY'), 1, 101);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (16, 'Todd Matthews', 'toddmatthews@matthews.todd', 'Office 2', '866-9412', 'I', TO_DATE('15-NOV-2001', 'DD-MON-YYYY'), 2, 102);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (17, 'Billy Bob', 'billy@bob.bob', 'Office 3', '866-9413', 'A', TO_DATE('25-NOV-2004', 'DD-MON-YYYY'), 3, 101);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (18, 'Nicholas Pickolas', 'nicholasp@pickolas.gov', 'Office 4', '866-9414', 'A', TO_DATE('23-JAN-1995', 'DD-MON-YYYY'), 4, 102);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (19, 'Ora Cull', 'oracull@oracle.org', 'Office 5', '866-9415', 'A', TO_DATE('15-NOV-2001', 'DD-MON-YYYY'), 5, 102);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (20, 'Cee Kwull', 'ceekwull@monkey.business', 'Office 6', '866-9416', 'A', TO_DATE('28-APR-2008', 'DD-MON-YYYY'), 6, 102);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (21, 'Jogs Nightly', 'jogsnl@nightly.org', 'Office 1', '866-9417', 'A', TO_DATE('18-AUG-2001', 'DD-MON-YYYY'), 1, 101);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (22, 'Jon Pumpsquat', 'jon@pump.squat', 'Office 2', '866-9418', 'A', TO_DATE('18-OCT-2014', 'DD-MON-YYYY'), 2, 102);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (23, 'Sobs Freely', 'sobs@freely.yes', 'Office 3', '866-9419', 'A', TO_DATE('03-NOV-1985', 'DD-MON-YYYY'), 3, 101);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (24, 'Gob Bluth', 'gob@bluth.org', 'Office 4', '866-9420', 'A', TO_DATE('04-DEC-1987', 'DD-MON-YYYY'), 4, 102);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (25, 'Jim Jimboree', 'jim@jimbo.ree', 'Office 5', '866-9421', 'A', TO_DATE('04-FEB-1991', 'DD-MON-YYYY'), 5, 102);
+
+INSERT INTO F15E6EMP_View(EMP_ID, EMP_NAME, EMP_EMAIL, EMP_OFFICE, EMP_PHONE, EMP_STATUS, STAT_EFF_DATE, F15E6_LAB_LAB_ID, F15E6_AUTH_AUTH_ID)
+  VALUES (26, 'Bearly Bare', 'bear@bearly.bare', 'Office 6', '866-9422', 'A', TO_DATE('07-JUN-1999', 'DD-MON-YYYY'), 6, 102);
+  
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (101, 'Entered', 'The RFE has been created but has not yet been submitted for approval.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (102, 'Submitted', 'The RFE has been submitted to the Lab System Administrator for approval.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (103, 'Returned', 'The RFE has been returned for further information or clarification. Once
+Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (104, 'Recalled', 'The requestor has recalled an RFE that has not yet reached final approval.
+Once Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (105, 'Rejected', 'The RFE has been rejected and cannot be implemented.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (106, 'SA Approved', 'The Lab System Administrator has approved the RFE; it has been submitted for
+Lab Director approval.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (107, 'LD Approval', 'The Lab Director has approved the RFE; it has been submitted for Network
+Security Panel approval.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (108, 'CH Approval', 'The Lab Director has approved the RFE; it has been submitted to the
+Chairperson of Security Panel approval.');
+INSERT INTO F15E6_STATUS(STATUS_ID, RFE_STATUS, desc_s)
+  VALUES (109, 'Final Approved', 'The Executive Directors Office has given final approval for the RFE and it may
+be implemented.');
+  
+INSERT INTO F15E6_TASK(TASK_ID, EFF_DATE, TASK_ABBREV, TASK_DESC)
+  VALUES (1, TO_DATE('03-JAN-1990', 'DD-MON-YYYY'), 'Flight testing', 'This task signifies a need for flight testing');
+INSERT INTO F15E6_TASK(TASK_ID, EFF_DATE, TASK_ABBREV, TASK_DESC)
+  VALUES (2, TO_DATE('11-SEP-1984', 'DD-MON-YYYY'), 'Field testing', 'This task signifies a need for field testing');
+INSERT INTO F15E6_TASK(TASK_ID, EFF_DATE, TASK_ABBREV, TASK_DESC)
+  VALUES (3, TO_DATE('23-MAR-2003', 'DD-MON-YYYY'), 'Spec review', 'This task signifies a need for spec review');
+INSERT INTO F15E6_TASK(TASK_ID, EFF_DATE, TASK_ABBREV, TASK_DESC)
+  VALUES (4, TO_DATE('29-DEC-2000', 'DD-MON-YYYY'), 'Internal mod', 'This task signifies a need for modification');
+INSERT INTO F15E6_TASK(TASK_ID, EFF_DATE, TASK_ABBREV, TASK_DESC)
+  VALUES (5, TO_DATE('14-AUG-1991', 'DD-MON-YYYY'), 'Remove harness', 'This task signifies a need for harness removal');
+INSERT INTO F15E6_TASK(TASK_ID, EFF_DATE, TASK_ABBREV, TASK_DESC)
+  VALUES (6, TO_DATE('19-APR-1997', 'DD-MON-YYYY'), 'Finalize design', 'This task signifies a need for finalization');
+
+alter trigger F15E6_Emp_PK_trig enable;
+alter trigger F15E6_Lab_PK_trig enable;
+alter trigger F15E6_Auth_PK_trig enable;
+alter trigger F15E6_Status_PK_trig enable;
+alter trigger F15E6_Task_PK_trig enable;
