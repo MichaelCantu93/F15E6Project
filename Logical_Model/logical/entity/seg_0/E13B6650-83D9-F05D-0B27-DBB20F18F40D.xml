@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E13B6650-83D9-F05D-0B27-DBB20F18F40D" name="F15E6 Approver">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>612EF6E8-FF31-032F-DC07-B47F2C2F9310</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp id" id="6BDA50BD-A36C-0A46-6F22-EA1AFE0A1328">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:09:15 UTC</createdTime>
+<generatorID>92C578FA-484D-B4B7-9D4D-E245F48361AB</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<referedAttribute>121DA809-E430-24AD-0040-FC00AFFEB077</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe id" id="CB32D759-3E4F-41C3-6BF6-CDA60FAA1203">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:09:21 UTC</createdTime>
+<generatorID>6155B9AD-38CC-6BC2-BC81-BF43A8FB8ECF</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<referedAttribute>6B926F85-16F2-EE5A-9298-1C22545F77C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="approver_id" id="B20813DA-8C2A-6137-2406-AF59B73BABA1">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:09:28 UTC</createdTime>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F3F50D4-2508-9F32-5145-34BAAB2876B2" name="approver PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>1A77E21D-2F63-7E74-7EB9-1E06E7A87E09</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>92C578FA-484D-B4B7-9D4D-E245F48361AB,6155B9AD-38CC-6BC2-BC81-BF43A8FB8ECF,B20813DA-8C2A-6137-2406-AF59B73BABA1</newElementsIDs>
+<usedAttributes>
+<attributeRef>6BDA50BD-A36C-0A46-6F22-EA1AFE0A1328</attributeRef>
+<attributeRef>CB32D759-3E4F-41C3-6BF6-CDA60FAA1203</attributeRef>
+<attributeRef>B20813DA-8C2A-6137-2406-AF59B73BABA1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

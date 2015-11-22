@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D4951CA5-24E0-5CF4-0135-3A0DD216A82D" name="F15E6 Lab">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>6DC83C5D-0751-7DF3-23D5-8C1B92D4529B</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab id" id="B75C0D7A-9639-4E54-E0D2-417A947F1031">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>5FB3033D-CF21-AC9F-BA2D-7C906CA1956B</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab name" id="D31BC808-A2F6-9CA9-5A5C-D722E1FC9A78">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>367377BF-30F0-C85C-1C7F-388142FB74A4</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab desc" id="7589A519-C2DB-28FC-CB2A-9E2349DAC2D7">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>80B7C899-F496-14D8-18A6-5B5D5C9907EC</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="791785C7-D3CE-D8B2-A438-EC542258B11D" name="F15E6 Lab PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>C6287064-3877-12CE-BBD2-5D3BC827E6D6</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B75C0D7A-9639-4E54-E0D2-417A947F1031</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

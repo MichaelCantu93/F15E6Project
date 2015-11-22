@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7190311F-4307-8005-BEE1-FB304FE269A2" name="F15E6_Comment">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-02 22:36:39 UTC</createdTime>
+<ownerDesignName>Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="720CF2BD-67EB-0CF7-B97A-799643C94AF0">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-02 22:36:46 UTC</createdTime>
+<ownerDesignName>Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="5FFE3C5F-327E-3DA4-147D-AE9C9431628B">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-02 22:37:10 UTC</createdTime>
+<generatorID>0ECED326-EEC7-D761-2942-9BA1BCF77902</generatorID>
+<ownerDesignName>Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CBBE9A0A-07CE-EC0B-13EB-F77FC0DE3795</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="5499A8E4-5599-A1F1-77DB-3E9B392E479F">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-02 22:41:49 UTC</createdTime>
+<generatorID>5562D376-5D5A-3FA8-4107-F9897B6134BD</generatorID>
+<ownerDesignName>Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>209AD050-070C-0162-C2B0-BBD35EC1A194</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entry_date" id="D1BD260E-9FD7-BDD2-7E19-D56A95925552">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-09 20:50:25 UTC</createdTime>
+<ownerDesignName>Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="3C934023-2707-2826-DBEA-D51BEFE6A224">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-09 20:51:07 UTC</createdTime>
+<ownerDesignName>Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="94176D35-0EC4-4E04-3B52-A1FC42A4E068" name="F15E6_Comment PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-02 22:36:54 UTC</createdTime>
+<ownerDesignName>Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>720CF2BD-67EB-0CF7-B97A-799643C94AF0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

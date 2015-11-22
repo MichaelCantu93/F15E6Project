@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79F5552C-E4AD-6374-0F4F-DE869D30CA16" name="F15E6_Docv4">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>BFD50920-E889-B78F-B583-6850FEA3B676</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doc_id" id="FB1C734B-02D1-C3CE-2EDF-210B0F29DB1D">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>0BF185FF-B9A6-D9BC-C11D-99CD0ACBC224</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="filename" id="E5ADB7BB-0B22-B4FF-28EB-FE0EF93E9BBB">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>FEAB89DC-0108-1F62-6654-C450B9F032C8</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_mimetype" id="8366688D-9D33-FFB9-A868-3C167471DF10">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>8E5EF936-DE4E-6521-E196-C869DD950D1D</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_charset" id="BF0B4F69-39A5-20AD-6E87-7BC0C23C29C8">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>768D2824-784F-0A3D-3524-CF9D224ED489</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_blob" id="CF073596-8133-33E1-A751-A7DE7AD7435B">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>6EB12752-3139-8199-2D2F-C30AB7AA3186</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_comments" id="EE717A35-A3A2-61D7-37E1-20F6A9C861ED">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>39CB5976-ACD2-5801-41FE-FE3998A23CED</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="6A61544B-05D1-2DC8-1C16-E375F50D746A">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>275FE762-7E53-4CA5-9109-5258EF173E82</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15E6_RFE_rfe_id" id="66917CBF-3074-51CF-EF0B-620135D46D74">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>5C909893-13C5-BA34-F3A0-30190D0E6A9C</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC3219D1-9B9D-18BE-5488-D6BA283FB26F" referredColumn="A23BCA19-3E3B-461F-3974-1EF8231BA643"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A464169-F61A-1CC4-36E4-1352B9FEF085" name="F15E6_Doc_PKv4">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>1E32E631-9277-4EF1-B669-283A8CF7008E</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB1C734B-02D1-C3CE-2EDF-210B0F29DB1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2067447-8BAA-FDC4-194F-C55C250FEF97" name="F15E6_Doc_F15E6_RFE_FKv4">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:12:32 UTC</createdTime>
+<generatorID>9E346922-693E-3974-3A62-8A93D2B3F885</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66917CBF-3074-51CF-EF0B-620135D46D74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

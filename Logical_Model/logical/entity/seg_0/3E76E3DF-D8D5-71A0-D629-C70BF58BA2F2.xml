@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E76E3DF-D8D5-71A0-D629-C70BF58BA2F2" name="F15E6 Comment">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>68F084CB-2AA3-4F37-3FE9-FD5332C75902</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment id" id="C8851264-2814-E3FC-CA74-2651F894E8FA">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>131D3FB3-DF69-DB43-1DDF-14DB18FF032B</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entry date" id="B36EC12E-695D-BE1F-5FFF-2BED10C92074">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>F4C33735-671A-24F1-DAC0-F513362FDA45</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="75C4E6AF-8C4D-E2B2-BEB5-F6AF7720DD90">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>230908D6-D39A-3EF8-53B8-02F06737754D</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp id" id="7F7994D7-1262-3848-D86F-677A6A445512">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:05:57 UTC</createdTime>
+<generatorID>472911BD-1936-2E72-91BD-59E250219170</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>121DA809-E430-24AD-0040-FC00AFFEB077</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe id" id="6DA0E71D-F992-5FDA-B507-3E643BFEA98C">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:06:08 UTC</createdTime>
+<generatorID>BF0FF1F3-048F-116D-AEFD-0DA3444DD7E6</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6B926F85-16F2-EE5A-9298-1C22545F77C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7732F167-45D1-A855-FDA6-AD5E50E62673" name="F15E6 Comment PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:51 UTC</createdTime>
+<generatorID>171AAECA-59EE-6FEB-205A-7EF93401379A</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="011D64E2-D422-16AD-AB4B-8A997B504CED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C8851264-2814-E3FC-CA74-2651F894E8FA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

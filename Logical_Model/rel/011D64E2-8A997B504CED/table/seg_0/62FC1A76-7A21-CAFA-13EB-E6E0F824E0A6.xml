@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62FC1A76-7A21-CAFA-13EB-E6E0F824E0A6" name="F15E6_LabDir">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:31 UTC</createdTime>
+<generatorID>79E160F4-CD9A-BBBE-F055-24285BFF97EE</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="25908446-CC3D-41E9-9D4F-72EB372B6581">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>209AD050-070C-0162-C2B0-BBD35EC1A194</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="739E6733-F52E-1448-25D5-515E05760D92" referredColumn="0A843C08-EE0E-21AF-930D-6D51E170E1D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C46CBF1-D098-1C7D-9450-CFF829FC1D3F" name="F15E6_LabDir_PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>BC080BDD-1019-B8E4-FF30-01E7FD59199F</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25908446-CC3D-41E9-9D4F-72EB372B6581"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="184E0679-9D4D-2CAD-8094-322DF7C0A7B3" name="F15E6_LabDir_F15E6_Emp_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>9B81AAF1-0652-F2E9-41A3-E0D8AC5AEACC</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25908446-CC3D-41E9-9D4F-72EB372B6581"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

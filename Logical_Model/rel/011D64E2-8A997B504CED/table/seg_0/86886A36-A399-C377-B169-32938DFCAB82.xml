@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86886A36-A399-C377-B169-32938DFCAB82" name="F15E6_Admin">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:31 UTC</createdTime>
+<generatorID>7B96C3D5-E3DA-2306-77CE-E0F897147259</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="AA2D6CDC-6647-5AE1-1949-7D98CD86736F">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>209AD050-070C-0162-C2B0-BBD35EC1A194</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F19B9D0B-F805-DE5B-182D-7D88D622ACDF" referredColumn="0A843C08-EE0E-21AF-930D-6D51E170E1D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="796B6606-7A02-2581-07EE-57B14B97838B" name="F15E6_Admin_PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>BC080BDD-1019-B8E4-FF30-01E7FD59199F</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA2D6CDC-6647-5AE1-1949-7D98CD86736F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="048F2C3C-65D7-099E-2EC3-9E618B6295F4" name="F15E6_Admin_F15E6_Emp_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>A68ABC4B-BABF-6F21-0E0C-994F46815A15</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA2D6CDC-6647-5AE1-1949-7D98CD86736F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

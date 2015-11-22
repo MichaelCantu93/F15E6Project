@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8726E5F2-1D4B-9556-27DB-7AB1F98DB0E6" name="approver">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:11:32 UTC</createdTime>
+<generatorID>E13B6650-83D9-F05D-0B27-DBB20F18F40D</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15E6_Emp_emp_id" id="7777AEEA-1446-90AD-CE91-4269471CC68D">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:11:32 UTC</createdTime>
+<generatorID>6BDA50BD-A36C-0A46-6F22-EA1AFE0A1328</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28A30E38-7919-0E61-45AB-071D589FEA4F" referredColumn="29B93D77-3CFC-777B-A0AD-064829FC36B2"/>
+</associations>
+</Column>
+<Column name="F15E6_RFE_rfe_id" id="30B0158C-F05C-0397-412A-C6C5484B6E19">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:11:32 UTC</createdTime>
+<generatorID>CB32D759-3E4F-41C3-6BF6-CDA60FAA1203</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9482F0E3-AA67-8AB1-0056-6FE677EF5C00" referredColumn="7E24B965-E442-F814-AFC9-7CCD7E51CC91"/>
+</associations>
+</Column>
+<Column name="approver_id" id="E7752B9A-CD2C-AF13-D1B2-D7B771C54968">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:11:32 UTC</createdTime>
+<generatorID>B20813DA-8C2A-6137-2406-AF59B73BABA1</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D438C71-8A1A-ABE0-8BA0-6732E9206058" name="approver_PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:11:32 UTC</createdTime>
+<generatorID>3F3F50D4-2508-9F32-5145-34BAAB2876B2</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7777AEEA-1446-90AD-CE91-4269471CC68D"/>
+<colUsage columnID="30B0158C-F05C-0397-412A-C6C5484B6E19"/>
+<colUsage columnID="E7752B9A-CD2C-AF13-D1B2-D7B771C54968"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A7E56F7-0982-10FD-3F15-716BEFABAD88" name="approver_F15E6_Emp_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:11:32 UTC</createdTime>
+<generatorID>92C578FA-484D-B4B7-9D4D-E245F48361AB</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7777AEEA-1446-90AD-CE91-4269471CC68D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89344981-78AA-7A66-26CC-8E80DC3AD143" name="approver_F15E6_RFE_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:11:32 UTC</createdTime>
+<generatorID>6155B9AD-38CC-6BC2-BC81-BF43A8FB8ECF</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30B0158C-F05C-0397-412A-C6C5484B6E19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

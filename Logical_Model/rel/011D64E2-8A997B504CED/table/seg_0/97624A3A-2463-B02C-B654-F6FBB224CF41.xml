@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97624A3A-2463-B02C-B654-F6FBB224CF41" name="F15E6_Contact">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:15:43 UTC</createdTime>
+<generatorID>96888276-A884-6B87-0939-4845679E326F</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15E6_Emp_emp_id" id="5AF1C904-3BED-E234-010A-9DD531A37AAE">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:15:43 UTC</createdTime>
+<generatorID>FB14A3E4-EFE4-28E2-0A48-945FA00BD351</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D35A1427-16F1-1FA1-CD74-ED350E8F797D" referredColumn="DA6C7178-95A1-3A32-27C7-DC5ACF09352A"/>
+</associations>
+</Column>
+<Column name="F15E6_RFE_rfe_id" id="E6C45F2E-3E2E-6FB8-B831-98E4E428FCE8">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:15:43 UTC</createdTime>
+<generatorID>7EABE939-7FB6-F93F-FF0A-A8B32CB3F441</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3954E69-8F67-08D6-245D-C3DAF20CAD44" referredColumn="FF227A72-257E-CE3E-8FEC-7B5C4FC17D73"/>
+</associations>
+</Column>
+<Column name="contact_id" id="7F8A3CAC-562E-D056-2DAB-BC0A511A0921">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:15:43 UTC</createdTime>
+<generatorID>2400E0E5-D423-7B03-C440-7F7E39D66202</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20692BBE-C8CC-ECDB-244A-22D9AFFAA8AB" name="F15E6_Contact_PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:15:43 UTC</createdTime>
+<generatorID>23EF2D15-5C27-C9B5-5345-804E7599203E</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AF1C904-3BED-E234-010A-9DD531A37AAE"/>
+<colUsage columnID="E6C45F2E-3E2E-6FB8-B831-98E4E428FCE8"/>
+<colUsage columnID="7F8A3CAC-562E-D056-2DAB-BC0A511A0921"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DC0929D-E009-5E2F-D816-656C411D759E" name="F15E6_Contact_F15E6_Emp_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:15:43 UTC</createdTime>
+<generatorID>FB561591-5A12-6400-6706-E39E727E353E</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AF1C904-3BED-E234-010A-9DD531A37AAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="382F6CE4-FB22-59F5-C2E8-9092D79252A2" name="F15E6_Contact_F15E6_RFE_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:15:43 UTC</createdTime>
+<generatorID>19B98B22-4688-98EC-AA2C-AABEC480986F</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6C45F2E-3E2E-6FB8-B831-98E4E428FCE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

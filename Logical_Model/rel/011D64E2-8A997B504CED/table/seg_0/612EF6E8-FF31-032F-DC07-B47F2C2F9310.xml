@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="612EF6E8-FF31-032F-DC07-B47F2C2F9310" name="approvers">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15E6_Emp_emp_id" id="997B97FF-3D5A-6F3D-2944-40F23630F5ED">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A4FCF31-5B7F-1B0B-76B6-672933A9575C" referredColumn="0A843C08-EE0E-21AF-930D-6D51E170E1D1"/>
+</associations>
+</Column>
+<Column name="F15E6_RFE_rfe_id" id="99BAA65A-41FB-A7F3-9541-BE48199651AC">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A54A55DB-BF4B-1597-FC98-3508CB0DDA02" referredColumn="45C3C9EF-EDAB-9556-664A-A3BF3A5BC8E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A77E21D-2F63-7E74-7EB9-1E06E7A87E09" name="approvers_PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="997B97FF-3D5A-6F3D-2944-40F23630F5ED"/>
+<colUsage columnID="99BAA65A-41FB-A7F3-9541-BE48199651AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE47C9A4-A2C4-3EB1-3409-073E9E672584" name="FK_ASS_5">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>BB9955FD-BD5E-7F45-F5B4-58EAA010D827</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="997B97FF-3D5A-6F3D-2944-40F23630F5ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE6AF681-19DD-6B87-DE28-833EAE556A93" name="FK_ASS_6">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-17 01:01:32 UTC</createdTime>
+<generatorID>BB9955FD-BD5E-7F45-F5B4-58EAA010D827</generatorID>
+<ownerDesignName>Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99BAA65A-41FB-A7F3-9541-BE48199651AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
