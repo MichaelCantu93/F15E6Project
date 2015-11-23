@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Part2_Conceptual" id="194DA6E2-7DA9-DC60-5CC4-C37BB277F551" version="3.5">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:26:37 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>194DA6E2-7DA9-DC60-5CC4-C37BB277F551</designId>
+</OSDM_Design>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E40AA7FA-196B-378B-EE6F-F7C17AC01925" containerWithKeyObject="480FC377-8BD9-BF86-F024-F9E55FFB9517" localFKIndex="2F4F8710-3B8B-E117-F6D6-5AF1F66D3903" name="Pokemon_Type_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>F8FD9660-5A0D-2042-FC7D-5377DA232B48</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>732EC1D8-020B-5C0F-E1B3-68319DC47C6C</referredTableID>
+<keyObject>A3DA648D-CD7A-B87E-ADAC-9AAE30B2A265</keyObject>
+<referredKeyID>A3DA648D-CD7A-B87E-ADAC-9AAE30B2A265</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

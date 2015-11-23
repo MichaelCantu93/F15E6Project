@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="B9761CEE-54D6-827B-146E-D3BC6C42AAB7" name="Type" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7023C5C5-184D-63ED-2F39-4E5100545A62" name="Pokemon" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CCC3F701-66D2-1DD9-373A-3E300A7EFE5E" name="Relation_2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F8FD9660-5A0D-2042-FC7D-5377DA232B48" name="" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

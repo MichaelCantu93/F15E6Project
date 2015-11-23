@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7023C5C5-184D-63ED-2F39-4E5100545A62" name="Pokemon">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:28:17 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="poke_id" id="34C9DBF3-51AC-ABDC-C654-48041424BE28">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:28:37 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="poke_name" id="C98AB0B7-A37B-B6CB-DA97-11D578672CF9">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:28:44 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="poke_type" id="4710B7B6-CAF0-375D-2A26-343EE5D0BFD5">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:29:39 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descr" id="1F33AC0A-4847-3EF5-92EF-792938A0FC45">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:30:20 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="image" id="B208B340-DD0F-1263-7EF5-0FCF636F1D9D">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:30:37 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type_id" id="AF568831-1BF9-9956-9B8B-8B95DF35C73B">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:38:02 UTC</createdTime>
+<generatorID>CCC3F701-66D2-1DD9-373A-3E300A7EFE5E</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>374F2ED1-641F-7D5F-CAF9-F37A150154D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="781015F7-912D-7C16-376C-684C8129B6A2" name="Pokemon PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:29:41 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="215A0355-5E20-ACBF-1528-3EBD72E1E46E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>34C9DBF3-51AC-ABDC-C654-48041424BE28</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

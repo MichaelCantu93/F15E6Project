@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="480FC377-8BD9-BF86-F024-F9E55FFB9517" name="Pokemon">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>7023C5C5-184D-63ED-2F39-4E5100545A62</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="poke_id" id="808E948D-8F09-2FD8-C406-4C4295622258">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>34C9DBF3-51AC-ABDC-C654-48041424BE28</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poke_name" id="A3C3EC3B-E4D4-C9D3-8FFA-8AF33B84C0C7">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>C98AB0B7-A37B-B6CB-DA97-11D578672CF9</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poke_type" id="9C61374F-EFC2-2B1F-C560-21BFCAB88336">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>4710B7B6-CAF0-375D-2A26-343EE5D0BFD5</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descr" id="2F6E8EF8-2D4A-A1F5-F78D-94129C73AC16">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>1F33AC0A-4847-3EF5-92EF-792938A0FC45</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="image" id="0B1E3DAA-4FB7-47A6-89FD-E4DD91929706">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>B208B340-DD0F-1263-7EF5-0FCF636F1D9D</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type_type_id" id="E267697C-0356-66E1-CEBF-11DC81988BD5">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>FEF7447C-6D9B-85E8-57DB-944AD02FF22A</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E40AA7FA-196B-378B-EE6F-F7C17AC01925" referredColumn="1B6FA939-1F79-8B44-67B7-D8AA77A43F3E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4129695-9012-D732-3133-5CA307231924" name="Pokemon_PK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>781015F7-912D-7C16-376C-684C8129B6A2</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="808E948D-8F09-2FD8-C406-4C4295622258"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A59D540-624D-D936-5BE1-8D3D333A608D" name="Pokemon__IDX">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F8FD9660-5A0D-2042-FC7D-5377DA232B48</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E267697C-0356-66E1-CEBF-11DC81988BD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F4F8710-3B8B-E117-F6D6-5AF1F66D3903" name="Pokemon_Type_FK">
+<createdBy>michael</createdBy>
+<createdTime>2015-11-23 03:36:17 UTC</createdTime>
+<generatorID>F8FD9660-5A0D-2042-FC7D-5377DA232B48</generatorID>
+<ownerDesignName>Part2_Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E267697C-0356-66E1-CEBF-11DC81988BD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

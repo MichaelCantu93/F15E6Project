@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="732EC1D8-020B-5C0F-E1B3-68319DC47C6C" name="Type" seqName="seg_0"/>
+   <object objectType="Table" objectID="480FC377-8BD9-BF86-F024-F9E55FFB9517" name="Pokemon" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="108C5E6F-3DAD-A5CB-8C27-42569B64040A" name="Type_Pokemon_FK" containerID="732EC1D8-020B-5C0F-E1B3-68319DC47C6C" refContainerID="480FC377-8BD9-BF86-F024-F9E55FFB9517" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E40AA7FA-196B-378B-EE6F-F7C17AC01925" name="Pokemon_Type_FK" containerID="480FC377-8BD9-BF86-F024-F9E55FFB9517" refContainerID="732EC1D8-020B-5C0F-E1B3-68319DC47C6C" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
