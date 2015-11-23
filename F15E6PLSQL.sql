@@ -41,10 +41,12 @@ END;
 DECLARE
  counter NUMBER;
  labdir VARCHAR2(1);
+ counter2 NUMBER;
 BEGIN
+  select count(*) into counter2 from F15E6_RFE where F15E6_STATUS_STATUS_ID = 106;
   select count(*) into counter from F15E6_Approver where F15E6_EMP_EMP_id = :P2_EMP;
-select labdir_flag into labdir from F15E6_EMP where EMP_id = :P2_EMP;
-  IF counter > 0 and labdir = 'Y' THEN
+  select labdir_flag into labdir from F15E6_EMP where EMP_id = :P2_EMP;
+  IF counter > 0 and labdir = 'Y' and counter2 > 0 THEN
     return true;
   ELSE
     return false;
@@ -57,10 +59,12 @@ END;
 DECLARE
  counter NUMBER;
  chair VARCHAR2(1);
+ counter2 NUMBER;
 BEGIN
+  select count(*) into counter2 from F15E6_RFE where F15E6_STATUS_STATUS_ID = 107;
   select count(*) into counter from F15E6_Approver where F15E6_EMP_EMP_id = :P2_EMP;
 select chair_flag into chair from F15E6_EMP where EMP_id = :P2_EMP;
-  IF counter > 0 and chair = 'Y' THEN
+  IF counter > 0 and chair = 'Y' and counter2 > 0THEN
     return true;
   ELSE
     return false;
@@ -73,10 +77,12 @@ END;
 DECLARE
  counter NUMBER;
  execdir VARCHAR2(1);
+ counter2 NUMBER;
 BEGIN
+  select count(*) into counter2 from F15E6_RFE where F15E6_STATUS_STATUS_ID = 108;
   select count(*) into counter from F15E6_Approver where F15E6_EMP_EMP_id = :P2_EMP;
 select execdir_flag into execdir from F15E6_EMP where EMP_id = :P2_EMP;
-  IF counter > 0 and execdir = 'Y' THEN
+  IF counter > 0 and execdir = 'Y' and counter2 > 0 THEN
     return true;
   ELSE
     return false;
